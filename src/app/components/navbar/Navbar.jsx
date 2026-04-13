@@ -37,18 +37,24 @@ const Navbar = () => {
   },
 ];
   return (
-    <div>
+    <div className={styles.container}>
 
-        <Link href={'/'}>BuiltbySaheed</Link>
+        <Link href={'/'} className={styles.logo}>iamSaheed</Link>
+        <div className={styles.links}>
         {links.map((link) => (
-            <Link key={link.id} href={link.url}>
+            <Link className={styles.link} key={link.id} href={link.url}>
                 {link.title}
             </Link>
         ))}
 
-        <button
+        <button className={styles.logout}
         onClick={()=>{console.log('Logged Out')}}
         >Logout</button>
+
+
+        </div>
+
+        
         
 
 

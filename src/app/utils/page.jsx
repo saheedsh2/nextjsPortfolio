@@ -3,7 +3,7 @@ import styles from './page.module.css'
 
 const Utils = () => {
   return (
-    <div>Utils</div>
+    <div className={styles.container}>Utils</div>
   )
 }
 
