@@ -1,11 +1,18 @@
 import React from 'react'
 import styles from './footer.module.css'
+import Image from 'next/image'
+
 
 const Footer = () => {
   return (
-    <div>
+    <div className={styles.container}>
         <div>Copyrights All Rights Reserved 2026</div>
-        <div></div>
+        <div className={styles.social}>
+            <Image src="/1.png" className={styles.icon} width={15} height={15} alt='facebook' />
+            <Image src="/2.png" className={styles.icon} width={15} height={15} alt='instagram' />
+            <Image src="/3.png" className={styles.icon} width={15} height={15} alt='twitter' />
+            <Image src="/4.png" className={styles.icon} width={15} height={15} alt='youtube' />
+        </div>
     </div>
   )
 }
