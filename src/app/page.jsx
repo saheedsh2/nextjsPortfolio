@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 import logo from '../../public/dva.png'
+import Button from './components/Button/Button'
 
 export default function Home() {
   return (
@@ -10,7 +11,8 @@ export default function Home() {
         <p className={styles.desc}>
           Transforming your ideas into reality, whether independently or collaboratively.
         </p>
-        <button className={styles.button}>See Some Projects</button>
+        
+        <Button url="/portfolio" text="Portfolio" />
       </div>
       <div className={styles.item}>
       <Image src={logo} alt='logo'className={styles.img} />
